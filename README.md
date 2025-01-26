@@ -4,6 +4,16 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
+First, run the development server:
+```bash
+npx create-next-app . -e https://github.com/LordGhapa/next-template-initial
+```
+```bash
+npm install -g commitizen
+```
+```bash
+npm install --global cz-conventional-emoji
+```
 ```bash
 npm run dev
 # or
