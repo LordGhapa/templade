@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const directory = path.join(__dirname, 'src') // Pasta onde estão seus arquivos
+const directory = path.join(__dirname, 'src') 
 
 function removeConsoleLogs(filePath) {
   let content = fs.readFileSync(filePath, 'utf8')
@@ -17,14 +17,14 @@ function processDirectory(dir) {
     const stat = fs.statSync(filePath)
 
     if (stat.isDirectory()) {
-      processDirectory(filePath) // Recursão para subdiretórios
+      processDirectory(filePath)
     } else if (
       filePath.endsWith('.ts') ||
       filePath.endsWith('.tsx') ||
       filePath.endsWith('.js') ||
       filePath.endsWith('.jsx')
     ) {
-      removeConsoleLogs(filePath) // Processa arquivos TypeScript e JavaScript
+      removeConsoleLogs(filePath) 
     }
   })
 }

@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "commit": "next lint && npx cz",
-
-    "prepare": "husky"
+    "prepare": "husky",
+    "remove-console": "node remove-console.js"
   },
   "dependencies": {
     "next": "15.1.6",
