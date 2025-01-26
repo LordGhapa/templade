@@ -6,7 +6,7 @@ First, run the development server:
 
 First, run the development server:
 ```bash
-npx create-next-app . -e https://github.com/LordGhapa/templade
+pnpx create-next-app . -e https://github.com/LordGhapa/templade
 ```
 ```bash
 npm install -g commitizen
